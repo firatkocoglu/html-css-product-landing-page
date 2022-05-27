@@ -1,0 +1,166 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+}
+
+header {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+
+.logo {
+  width: 100%;
+  margin-top: 1.2rem;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+}
+
+#main-header {
+  margin-top: 8rem;
+  font-size: 2rem;
+}
+
+footer {
+  text-align: end;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+footer p {
+  padding-right: 1rem;
+}
+
+#header-img {
+  max-width: 30%;
+  height: auto;
+  display: flex;
+}
+
+a {
+  margin: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+form {
+  margin: 2rem 0;
+}
+#email {
+  width: 20%;
+}
+
+#submit {
+  margin: 0.5rem;
+  background-color: khaki;
+}
+
+#submit:hover {
+  background-color: goldenrod;
+}
+
+#features {
+  margin-top: 4rem;
+}
+
+#how-it-works {
+  margin: 5rem;
+  text-align: center;
+}
+
+#pricing {
+  margin-bottom: 4rem;
+}
+
+.grid {
+  max-width: 70%;
+  display: flex;
+  column-gap: 5rem;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.desc {
+  text-align: left;
+}
+
+.trombones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3rem;
+}
+
+.trombone {
+  text-align: center;
+  border-width: 0.2rem;
+  border-style: ridge;
+  width: 20rem;
+  height: 22rem;
+}
+
+.trombone div {
+  background-color: lightgray;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  line-height: 2;
+  padding: 9px;
+}
+
+@media (max-width: 800px) {
+  #nav-bar {
+    display: none;
+  }
+
+  #email {
+    width: 50%;
+  }
+
+  #video {
+    width: 360;
+    height: 240;
+  }
+
+  footer {
+    display: none;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .grid {
+    display: grid;
+    text-align: center;
+    width: 150%;
+    margin: auto;
+    row-gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .trombones {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+}
